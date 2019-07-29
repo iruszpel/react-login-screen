@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+body {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: hidden;
+  font-family: 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media only screen and (min-height: 1080px) {
+  body {
+    background-image: url('./../img/background.jpg');
+  }
+  .BlurSideBar::before {
+    background: url('./../img/background.jpg') 0 / cover fixed;
+  }
+}
+@media only screen and (max-height: 1080px) {
+  body {
+    background-image: url('./../img/background_1080.jpg');
+  }
+  .BlurSideBar::before {
+    background: url('./../img/background_1080.jpg') 0 / cover fixed;
+  }
+}
+@media only screen and (max-height: 600px) {
+  body {
+    background-image: url('./../img/background_792.jpg');
+  }
+  .BlurSideBar::before {
+    background: url('./../img/background_792.jpg') 0 / cover fixed;
+  }
+}
+.BlurSideBar {
+  position: absolute;
+  width: 40vw;
+  height: 100%;
+  top:0;
+  right: 0;
+  background: rgba(107, 105, 105, 0.3);
+  /*-webkit-backdrop-filter: blur(15px);
+  -moz-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);*/
+}
+.BlurSideBar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(20px);
+  z-index: -1;
+}
+.SignUp-header {
+  margin-top: 20%;
+  font-size: 4.8vh;
+  font-weight: 300;
+  font-family: 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(236, 227, 227)
+}
+.inside {
+  margin-left: 10%;
+}
+a {
+  color: #fff;
+  font: 300 2vh 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#login {
+  margin-left: 10%;
+}
+.CheckboxButtonBasic {
+  margin-top: 3%;
+}
+#signup {
+  margin-top: 8%;
+}
+#terms_alert {
+  margin-top: 1.2%;
+}
+.hidden {
+  margin-top: -0.6vh;
+  margin-bottom: -0.6vh;
+  visibility: hidden;
+  color: red;
+  font-size: 1.8vh;
+  font-weight: 300;
+  height: 1.8vh;
+  width: 100%;
+}
+.InformBottom {
+  font-weight: 300;
+  position: absolute;
+  bottom: 14vh;
+  width: 45vw;
+  left: 5vw;
+}
+.LargeText {
+  color: #fff;
+  width: 30vw;
+  font-size: 7vh;
+
+}
+.SmallerTextInform {
+  margin-top: 1vh;
+  font-size: 4vh;
+  color: rgb(245, 231, 231)
+}
+.AppIcons {
+  margin-top: 2vh;
+}
+.smallIcon {
+  cursor: pointer;
+  height: 7vh;
+}
+.smallIcon + .smallIcon{
+  margin-left: 1.3vw;
+}
+#loading {
+  width: 7vh;
+  height: 7vh;
+margin: 4% auto 4% 30%;
+}

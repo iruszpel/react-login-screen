@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+body {
+  background:  no-repeat center center fixed;
+  background-color: rgba(31, 21, 21, 0.288);
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: hidden;
+  font-family: 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media only screen and (min-height: 1080px) {
+  body {
+    background-image: url('./../img/background.jpg');
+  }
+  .BlurSideBar::before {
+    background: url('./../img/background.jpg') 0 / cover fixed;
+  }
+}
+@media only screen and (max-height: 1080px) {
+  body {
+    background-image: url('./../img/background_1080.jpg');
+  }
+  .BlurSideBar::before {
+    background: url('./../img/background_1080.jpg') 0 / cover fixed;
+  }
+}
+@media only screen and (max-height: 600px) {
+  body {
+    background-image: url('./../img/background_792.jpg');
+  }
+  .BlurSideBar::before {
+    background: url('./../img/background_792.jpg') 0 / cover fixed;
+  }
+}
+
+.SignIn-header {
+  font-size: 7.2vh;
+  font-weight: 300;
+  font-family: 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(236, 227, 227)
+}
+.inside {
+  margin-top: 6%;
+  margin-left: 10%;
+
+}
+.inputs {
+  width: 40%;
+}
+a {
+  color: #fff;
+  font: 300 2vh 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#signup {
+  margin-top: 8%;
+  margin-left: 8%;
+}
+#signin {
+  margin-top: 6%;
+}
+.hidden {
+  margin-top: -0.6vh;
+  margin-bottom: -0.6vh;
+  visibility: hidden;
+  color: red;
+  font-size: 1.8vh;
+  font-weight: 300;
+  height: 1.8vh;
+  width: 100%;
+}
+#terms_alert {
+  margin-bottom: -1.3vh;
+  font-size: 2.1vh;
+  margin-top: 0.4%;
+}
+#loading {
+  width: 7vh;
+  height: 7vh;
+margin: 4% auto 4% auto;
+}
+.SmallerTextInform {
+  margin-top: 1.2vh;
+  font-size: 2.7vh;
+  margin-bottom: 1.4vh;
+  color: rgb(245, 231, 231);
+  font-weight: 300;
+}
+
+.AppIcons {
+margin-top: -10%;
+}
+.smallIcon {
+  cursor: pointer;
+  height: 7vh;
+}
+.smallIcon + .smallIcon{
+  margin-left: 1.3vw;
+}

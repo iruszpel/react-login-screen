@@ -1,0 +1,50 @@
+{
+  "name": "react-login-screen",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/http-proxy-middleware": "^0.19.2",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.6.2",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "16.8.4",
+    "@types/react-router-dom": "^4.3.4",
+    "dexie": "^2.0.4",
+    "http-proxy-middleware": "^0.19.1",
+    "react": "^16.8.6",
+    "react-async-component": "^2.0.0",
+    "react-dom": "^16.8.6",
+    "react-facebook-auth": "^1.4.0",
+    "react-google-invisible-recaptcha": "^0.2.11",
+    "react-google-login": "^5.0.4",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-twitter-auth": "^0.0.13",
+    "typescript": "3.5.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^8.0.5",
+    "@types/react-twitter-auth": "0.0.1"
+  }
+}

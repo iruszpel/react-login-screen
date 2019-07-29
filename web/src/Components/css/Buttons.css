@@ -1,0 +1,96 @@
+.ButtonBasicTransparent {
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  background: transparent;
+  border: 0.23vh solid #ffffff;
+  font: 300 3vh 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 1vh 2.8vw;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 1s ease-in-out, color 1s ease-in-out;
+}
+
+.ButtonBasicTransparent:hover, .ButtonBasicTransparent:active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.185);
+}
+.CheckboxButtonBasic input[type="checkbox"] { display: none; }
+
+.CheckboxButtonBasic input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 7%;
+  font: 300 2vh 'Lato', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 20px;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.CheckboxButtonBasic input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+.CheckboxButtonBasic input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 2vh;
+  height: 2vh;
+  border: 1px solid #e0ebf0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.CheckboxButtonBasic input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.threeDot, .threeDot:before, .threeDot:after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #34495e;
+}
+
+.threeDot {
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.threeDot:before, .threeDot:after {
+  content: "";
+}
+
+.threeDot:before {
+  right: 25px;
+  transition: right .3s ease-out;
+}
+
+.threeDot:after {
+  left: 25px;
+  transition: left .3s ease-out;
+}
+
+.threeDots:hover .threeDot:before {
+  right: -25px;
+}
+
+.threeDots:hover .threeDot:after {
+  left: -25px;
+}
